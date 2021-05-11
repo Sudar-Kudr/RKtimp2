@@ -1,9 +1,8 @@
-#include "hex.h"
+#include "sqrt.h"
 #include <iostream>
-#include <string>
-#include <sstream>
+#include <cmath>
 
 int main(){
-  std::cout << "Result " << intToHexStr(289345) << std::endl;
+  std::cout << "Result " << DOsqrt(9) << std::endl;
   return 0;
 }
