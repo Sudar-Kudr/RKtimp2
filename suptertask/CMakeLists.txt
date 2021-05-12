@@ -49,7 +49,7 @@ install(EXPORT RKtimp2-config DESTINATION cmake)
 
 if (BUILD_TESTS)
 enable_testing()
-add_subdirectory(tea/googletest)
+add_subdirectory(teatea/googletest)
 file(GLOB ${PROJECT_NAME}_TEST_SOURCES tests/*.cpp)
                                              add_executable(tests ${${PROJECT_NAME}_TEST_SOURCES})
                                              target_link_libraries(tests ${PROJECT_NAME} gtest_main)
