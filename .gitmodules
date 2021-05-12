@@ -1,0 +1,3 @@
+[submodule "suptertask/teatea/gtest"]
+	path = suptertask/teatea/gtest
+	url = https://github.com/google/googletest
