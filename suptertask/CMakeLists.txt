@@ -13,7 +13,6 @@ HunterGate(
   SHA1 "e14bc153a7f16d6a5eeec845fb0283c8fad8c358"
 )
 ######
-//project(RKtimp2)
 project(suptertask)
 
 add_library(suptertask STATIC ${CMAKE_CURRENT_SOURCE_DIR}/sources/sqrt.cpp)
