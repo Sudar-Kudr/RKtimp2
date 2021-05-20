@@ -5,14 +5,14 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 option(BUILD_EXAMPLES "Build examples" ON)
 option(BUILD_TESTS "Build tests" ON)
-######
+
 include("cmake/HunterGate.cmake")
      HunterGate(
          URL "https://github.com/path/to/hunter/archive.tar.gz"
          SHA1 "798501e983f14b28b10cda16afa4de69eee1da1d"
      )
 
-######
+
 project(sqrt)
 set(SQRT_VERSION_MAJOR 0)
 set(SQRT_VERSION_MINOR 1)
