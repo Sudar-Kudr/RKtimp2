@@ -3,5 +3,5 @@
 #include <gtest/gtest.h>
 
 TEST(sqrt, test) {
-  EXPECT_EQ(area(9), 3);
+  EXPECT_EQ(DOsqrt(9), 3);
 }
