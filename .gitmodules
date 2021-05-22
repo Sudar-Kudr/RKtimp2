@@ -1,5 +1,5 @@
 [submodule "suptertask/tools/polly"]
-	path = tools/polly
+	path = suptertask/tools/polly
 	url = https://github.com/ruslo/polly
 [submodule "suptertask/teatea/gtest"]
 	path = suptertask/teatea/gtest
