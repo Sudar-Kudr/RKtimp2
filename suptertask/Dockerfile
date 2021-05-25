@@ -4,17 +4,13 @@ ENV TZ=Europe/Moscow
 RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone
 
 RUN apt update
-RUN apt install -yy gcc g++ cmake git vim
+RUN apt install -yy git g++ cmake vim
 RUN mkdir -p ~/workspace/projects/RKtimp2/suptertask
-
-COPY . ~/workspace/projects/RKtimp2/suptertask
 WORKDIR ~/workspace/projects/RKtimp2/suptertask
+RUN git clone https://github.com/Sudar-Kudr/suptertask.git .
 
 RUN cmake -H. -B_build -DCMAKE_INSTALL_PREFIX=_install -DBUILD_TESTS=ON
 RUN cmake --build _build --target install
-RUN cmake --build _build --target test -- ARGS=--verbose
-RUN cmake -H. -B_build -DCPACK_GENERATOR="TGZ"
-RUN cmake --build _build --target package
 
 RUN cmake --build _build --target test
 
