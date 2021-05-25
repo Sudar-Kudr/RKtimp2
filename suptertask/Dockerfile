@@ -10,7 +10,6 @@ RUN mkdir -p ~/workspace/projects/RKtimp2/suptertask
 COPY . ~/workspace/projects/RKtimp2/suptertask
 WORKDIR ~/workspace/projects/RKtimp2/suptertask
 
-RUN cd suptertask
 RUN cmake -H. -B_build -DCMAKE_INSTALL_PREFIX=_install -DBUILD_TESTS=ON
 RUN cmake --build _build --target install
 RUN cmake --build _build --target test -- ARGS=--verbose
